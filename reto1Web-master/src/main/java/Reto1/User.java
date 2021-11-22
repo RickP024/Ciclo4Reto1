@@ -30,17 +30,5 @@ public class User implements Serializable {
     private String password;
     @NonNull
     @Column(name = "user_name", nullable = false, length = 80)
-    private String name;
-
-    //CONTRUCTORES QUE LOMBOK NO SOLUCIONA
-
-    public User(String email, String password, String string) {
-    }
-    public Object getId() {
-        return null;
-    }
-    public String getEmail() {
-        return null;
-    } 
-        
+    private String name;   
 }
